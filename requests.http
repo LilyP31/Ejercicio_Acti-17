@@ -1,0 +1,28 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Lucia smith",
+    "age": "45",
+    "email": "evasmith@gmail.com"
+}
+
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/63a5ca9a9992a627b20d908b HTTP/1.1
+
+###
+PUT  http://localhost:9000/api/users/63a5ca9a9992a627b20d908b  HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Lucia smith",
+    "age": "35",
+    "email": "luciasmith@gmail.com"
+}
+
+###
+DELETE  http://localhost:9000/api/users/63a5cbc31c7d9440037a2d79 HTTP/1.1
